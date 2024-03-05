@@ -82,7 +82,3 @@
         php artisan migrate:status
     - Deshace todas las migraciones y las ejecuta otra vez.
         php artisan migrate:refresh
-
-##### Para actualizar migraciones
-
-    php artisan migrate:refresh
