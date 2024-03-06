@@ -58,7 +58,7 @@
 
 ##### Definir los campos en mi modelo para trabahar con mi tabla
 
-    protected $table = 'tbl_empleados'; // Nombre de la tabla en la base de datos
+    protected $table = 'empleados'; // Nombre de la tabla en la base de datos
 
     protected $fillable = [
         'nombre',
@@ -92,7 +92,7 @@
       El helper asset generará la URL completa a la carpeta de avatares, asegurando que las imágenes se carguen correctamente independientemente de la ruta en la que te encuentres dentro de tu aplicación Laravel.
       <img src="{{ asset('avatars/' . $empleado->avatar) }}" alt="Avatar" width="50" height="50" />
 
-##### Nota
+##### 🔥 Nota
 
     Si no hay contenido en la sección 'content' de la vista que extiende app.blade.php,
     la plantilla base incluirá la lista de empleados por defecto.
@@ -110,7 +110,7 @@
         @yield('content')
     @endif
 
-#### 🔥 Importante, pasos para correr el proyecto
+#### Importante, pasos para correr el proyecto 🚀
 
     1. Actualizar dependencias de Composer
         composer update
