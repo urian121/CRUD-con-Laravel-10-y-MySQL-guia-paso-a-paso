@@ -31,3 +31,13 @@ hr {
 .bi-arrow-right-circle {
     font-size: 30px;
 }
+
+.button-container {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos de manera equitativa */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.button-group {
+    margin-right: 5px; /* Espacio entre los botones */
+}

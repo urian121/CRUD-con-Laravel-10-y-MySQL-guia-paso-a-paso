@@ -12,17 +12,18 @@
 
 <body>
     <h1 class="text-center mt-5 mb-5 fw-bold">CRUD (Crear, Leer, Actualizar y Eliminar) <br> con Laravel 10 y MySQL</h1>
-
+    
     <div class="container">
+        @include('messages')
+        
         <div class="row justify-content-md-center">
             <div class="col-md-4" style="border-right: 1px solid #dee2e6;">
                 @include('empleados.add')
             </div>
-            <div class="col-md-8">
-                <h1 class="text-center">Lista de empleados
 
-                </h1>
-                  @yield('content')
+            @yield('content')
+            <div class="col-md-8">
+                <h1 class="text-center">Lista de empleados</h1>
                    @include('empleados.index')
             </div>
         </div>

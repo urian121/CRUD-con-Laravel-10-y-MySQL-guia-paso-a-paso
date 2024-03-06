@@ -1,4 +1,4 @@
-<form action="" method="POST" enctype="multipart/form-data">
+<form  action="{{ route('myStore') }}" method="POST" enctype="multipart/form-data">
     {{ csrf_field() }}
     <div class="mb-3">
         <label class="form-label">Nombre</label>
@@ -64,7 +64,7 @@
 
     <div class="mb-3 mt-4">
         <label class="form-label">Cambiar Foto del empleado</label>
-        <input class="form-control form-control-sm" type="file" name="avatar" accept="image/png, image/jpeg" />
+        <input class="form-control form-control-sm" type="file" name="avatar" accept="image/png, image/jpeg" required/>
     </div>
 
     <div class="d-grid gap-2">
