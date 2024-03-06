@@ -17,12 +17,6 @@ class EmpleadosController extends Controller
         return view('layouts.app', compact('empleados'));
     }
 
-
-    public function create()
-    {
-        //
-    }
-
     /**
      * Store a newly created resource in storage.
      */
@@ -51,18 +45,14 @@ class EmpleadosController extends Controller
         return redirect()->back()->with('success', 'Empleado registrado exitosamente.');
     }
 
-    /**
-     * Display the specified resource.
-     */
+
     public function show($empleado)
     {
         $empleado = Empleados::findOrFail($empleado);
         return view('empleados.show', compact('empleado'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
+
     public function edit($idEmpleado)
     {
         $empleado = Empleados::findOrFail($idEmpleado);
@@ -107,15 +97,12 @@ class EmpleadosController extends Controller
         return redirect()->route('home')->with('success', 'Empleado actualizado exitosamente.');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+
     public function destroy($idEmpleado)
     {
         $empleado = Empleados::find($idEmpleado);
 
         if (!$empleado) {
-
             return redirect()->route('home')->with('error', 'Empleado no encontrado.');
         }
 

@@ -11,7 +11,6 @@
     Editar datos del empleado <hr>
 </h1>
 
-
 <form  action="{{ route('myUpdate', $empleado->id) }}" method="POST" enctype="multipart/form-data">
     @csrf
     @method("PUT")
