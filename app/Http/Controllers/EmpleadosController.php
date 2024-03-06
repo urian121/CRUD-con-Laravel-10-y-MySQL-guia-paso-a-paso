@@ -5,23 +5,19 @@ namespace App\Http\Controllers;
 use App\Models\Empleados;
 use Illuminate\Http\Request;
 //use Illuminate\View\View;
-use Illuminate\Http\RedirectResponse;
+//use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Str;
 
 class EmpleadosController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     public function index()
     {
         $empleados = Empleados::all();
-        return view('home', compact('empleados'));
+        return view('layouts.app', compact('empleados'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+
     public function create()
     {
         //

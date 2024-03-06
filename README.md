@@ -1,5 +1,7 @@
 # CRUD completo con Laravel 10 y MySQL
 
+##### Este tutorial te sumerge en el poder de Laravel 10 y MySQL, explorando la implementación de CRUD (Crear, Leer, Actualizar y Eliminar). Aprende a desarrollar aplicaciones web dinámicas y escalables con las prácticas de gestión de datos más efectivas. Descubre cómo crear, leer, actualizar y eliminar registros de manera eficiente mientras dominas las mejores prácticas de desarrollo web con Laravel y MySQL. Convierte tus ideas en aplicaciones funcionales y robustas con esta guía completa.
+
 ##### Requisitos previos:
 
     Antes de comenzar, asegúrate de tener instalado PHP, Composer y cualquier servidor de apache
@@ -82,3 +84,37 @@
         php artisan migrate:status
     - Deshace todas las migraciones y las ejecuta otra vez.
         php artisan migrate:refresh
+
+![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/crud-laravel10-y-mysql.png)
+
+##### Usando el helper asset
+
+      El helper asset generará la URL completa a la carpeta de avatares, asegurando que las imágenes se carguen correctamente independientemente de la ruta en la que te encuentres dentro de tu aplicación Laravel.
+      <img src="{{ asset('avatars/' . $empleado->avatar) }}" alt="Avatar" width="50" height="50" />
+
+##### Nota
+
+    Si no hay contenido en la sección 'content' de la vista que extiende app.blade.php,
+    la plantilla base incluirá la lista de empleados por defecto.
+    Si defines contenido en la sección 'content' de la vista que extiende la plantilla base,
+    ese contenido se insertará en lugar de @yield('content') en la plantilla base.
+    Si no defines ninguna sección 'content' en la vista, la lista de empleados se incluirá automáticamente.
+    La parte @if (!trim($__env->yieldContent('content'))) ... @endif verifica si la sección 'content' está vacía en la vista
+    que extiende la plantilla base. Si está vacía (es decir, no has definido ningún contenido para esa sección en tu vista),
+    entonces se incluye la lista de empleados automáticamente.
+
+
+    @if (empty(trim($__env->yieldContent('content'))))
+        @include('empleados.index')
+    @else
+        @yield('content')
+    @endif
+
+### Expresiones de Gratitud 🎁
+
+    Comenta a otros sobre este proyecto 📢
+    Invita una cerveza 🍺 o un café ☕
+    Paypal iamdeveloper86@gmail.com
+    Da las gracias públicamente 🤓.
+
+## No olvides SUSCRIBIRTE 👍
