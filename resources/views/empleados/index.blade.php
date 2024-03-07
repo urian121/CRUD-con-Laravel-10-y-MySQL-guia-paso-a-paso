@@ -38,7 +38,7 @@
                                 <a href="{{ route('myEdit', $empleado->id) }}" class="btn btn-primary"><i class="bi bi-pencil-square"></i></a>   
                             </li>
                             <li>
-                                <form action="{{ route('mydestroy', $empleado->id) }}" method="post">
+                                <form action="{{ route('myDestroy', $empleado->id) }}" method="post">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-danger" onclick="return confirm('¿Desea eliminar este registro?');"><i class="bi bi-trash"></i> </button>
