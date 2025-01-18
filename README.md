@@ -2,7 +2,7 @@
 
 ##### Este tutorial te sumerge en el poder de Laravel 10 y MySQL, explorando la implementación de CRUD (Crear, Leer, Actualizar y Eliminar). Aprende a desarrollar aplicaciones web dinámicas y escalables con las prácticas de gestión de datos más efectivas. Descubre cómo crear, leer, actualizar y eliminar registros de manera eficiente mientras dominas las mejores prácticas de desarrollo web con Laravel y MySQL. Convierte tus ideas en aplicaciones funcionales y robustas con esta guía completa.
 
-#### resultado final
+#### Resultado final 😲
 ![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/crud-laravel10-y-mysql.png)
 
 ##### Requisitos previos:
